@@ -1,0 +1,65 @@
+"fisier configurabil pentru vim
+
+execute pathogen#infect()
+
+"colorare sytaxa
+syntax enable
+
+"color scheme
+colorscheme gruvbox
+
+"background color
+set background=dark
+
+"contrast
+let g:gruvbox_contrast_dark='hard'
+
+"set curent line color
+set cursorline
+highlight Normal ctermfg=grey
+
+"make backsapce work
+set backspace=indent,eol,start
+
+" Show current mode down the bottom
+set showmode
+
+"show matching paranthesis
+set showmatch
+
+"remove whitespaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+"set font
+"set guifont=IBM\ Plex\ Mono:h12
+
+"indentation
+"filetype indent on
+set tabstop=4
+"set expandtab
+"set smartindent
+"set autoindent
+
+"move between splits (ctrl + {i-up, j-down, l-left, k-rigt})
+map <S-j> <C-W>j
+map <S-i> <C-W>k
+map <S-k> <C-W>h
+map <S-l> <C-W>l
+
+"Add a colored column at 90 to avoid going to far to the right
+"set colorcolumn=80
+
+"move between vim tabs
+set switchbuf=usetab
+nnoremap <S-left> :tabprevious<CR>
+nnoremap <S-right> :tabnext<CR>
+
+"for lightline (bara de jos cu informatii)
+set laststatus=2
+
+"for NERDTree
+nmap <F12> :NERDTreeToggle<CR>
+"autocmd VimEnter * NERDTree  "open by default
+~
+~
+~
