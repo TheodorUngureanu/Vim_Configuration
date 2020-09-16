@@ -1,9 +1,13 @@
 "fisier configurabil pentru vim
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 "colorare sytaxa
 syntax enable
+
+"call plug#begin()
+"Plug 'morhetz/gruvbox'
+"call plug#end()
 
 "color scheme
 colorscheme gruvbox
@@ -60,6 +64,3 @@ set laststatus=2
 "for NERDTree
 nmap <F12> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree  "open by default
-~
-~
-~
